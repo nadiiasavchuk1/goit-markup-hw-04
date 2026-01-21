@@ -73,7 +73,7 @@ color:#2e2f42;
 .page-header{
   border-bottom: 1px solid #e7e9fc;
 }
-header-container{
+.header-container{
 display: flex;
 align-items: center;
 }
@@ -205,23 +205,22 @@ letter-spacing: 0.02em;
 color: #f4f4fd;
 }
 
-/* section 1 */
+/* section 1 - hero */
 
 .hero-section{
   background-color: #2e2f42;
-  padding: 188px 0;
-}
-.hero-container{
- max-width: 1158px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
-  text-align: center;
+  padding: 188px 0;
 }
 
 .headline-text {
   max-width: 496px;
   margin: 0 auto 48px;
-
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -241,16 +240,16 @@ color: #f4f4fd;
   height: 56px;
   margin: 0 auto;
   border: none;
-  background-color: var(--accent-color, #4d5ae5);
+  background-color: #4d5ae5;
   border-radius: 4px;
   cursor: pointer;
-
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-box:hover,
@@ -308,7 +307,16 @@ letter-spacing: 0.02em;
 color: #434455;
 text-align: left;
 
-
+.advantages-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
 
 }
 
