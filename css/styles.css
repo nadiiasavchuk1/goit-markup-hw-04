@@ -176,11 +176,21 @@ img {
 /* ================= HERO ================= */
 
 .hero-section {
-  background-color: #2e2f42;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 188px 0;
-  text-align: center;
-}
 
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office\ 1.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+ 
 .headline-text {
   max-width: 496px;
   margin: 0 auto 48px;
@@ -194,6 +204,8 @@ img {
 .hero-button {
   min-width: 169px;
   height: 56px;
+    display: block;
+  margin: 0 auto;
   border: none;
   border-radius: 4px;
   background-color: #4d5ae5;
